@@ -1,0 +1,20 @@
+:root{
+    --fonte-nome:"Righteous";
+    --roxo: rgba(128, 99, 182,1);
+    --cor-texto: #fff;
+}
+
+body{
+    background-color: rgb(20,20,20);
+
+}
+
+.titulo{
+    margin-top: 2em;
+    font-family: var(--fonte-nome);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color:var(--roxo);
+}
+

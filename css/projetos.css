@@ -1,0 +1,155 @@
+.container4{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.tipo_projeto{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em auto;
+}
+
+.item_projeto{
+    font-family: var(--fonte-nome);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.item_projeto:hover{
+    color: var(--roxo);
+}
+
+
+.accordion_itens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.accordion_item{
+    font-family: var(--fonte-nome);
+    font-weight: 500;
+    margin: 6px;
+    border-radius: 5px;
+    border: solid 2px var(--roxo);
+
+}
+
+.accordion_item:hover{
+    opacity: 0.9;
+}
+
+.accordion_header{
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.accordion_content{
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+}
+
+.actve{
+    padding-bottom:10px;
+}
+
+span, .icon{
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.selecionado{
+    color: var(--roxo);
+    border-bottom: 2px solid var(--roxo);
+    border-radius: 0;
+}
+
+.titulo__projeto{
+    font-family: var(--fonte-nome);
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.paragrafo__projeto{
+    font-size: 18px;
+    font-family: var(--fonte-nome);
+    font-weight: 500; font-weight: 500;
+    color: #fff;
+    margin: 0 1em;
+}
+
+.links__projeto{
+    display: flex;
+    margin: 20px;
+    gap: 0.5em;
+}
+
+.link__projeto{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 20 auto;
+    background-color: var(--roxo);
+}
+
+.link__projeto:hover{
+    border: 1px solid black;
+    transition: 200ms linear;
+    box-shadow: 0 0 1em black;
+}
+
+.back-end{
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .container4{
+        width: 127%;
+    }
+
+    .content{
+        width: 50%;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container4{
+        width: 125%;
+        overflow: scroll;
+    }
+
+    .content{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .accordion_itens{
+        display: flex;
+        flex-direction: column;
+    }
+    .item_projeto{
+        font-size: 25px;
+    }
+}

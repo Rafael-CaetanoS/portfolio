@@ -1,0 +1,191 @@
+.container{
+    margin-bottom: 8em;
+    height: 650px;
+ 
+}
+
+.itens{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto ;
+}
+
+
+.descricao{
+    margin: 7em auto;
+    width: 55%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    text-align: left;
+}
+
+.escrita{
+    color: var(--cor-texto);
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: var(--fonte-nome);
+ 
+}
+
+.contato{
+    display: flex;
+    margin: 0 auto;
+    gap: 2em;
+}
+
+.botao{
+    text-align: center; 
+    background-color:var(--roxo);
+    border-radius: 24px;
+    color:  var(--cor-texto);
+    padding: 22px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.git{
+    padding: 22px 30px;
+}
+
+.botao:hover{
+    transition: 200ms linear;
+    box-shadow: 0 0 1em black;
+}
+
+
+.logo-descricao{ 
+    width: 45%;
+    height: 600px;
+    margin-top: 7em;
+}
+
+.imagemAstronauta {
+    position: relative;
+    z-index:1;
+    margin: 3em 0 0 3em;
+    width: 400px;
+    transform: translate(0px);
+    animation: flutuacao 6s ease-in-out infinite;
+}
+
+@keyframes flutuacao{
+    0%{
+        transform: translate(-40px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    100%{
+        transform:translate(-40px);
+    }
+}
+
+#digitacao{
+    font-size: 55px;
+    color: var(--roxo);
+    padding-left: 83px;
+}
+
+#digitacao::after{
+    content:'|';
+    margin-left: 10px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 500px;
+        margin-bottom: 2em;
+        width: 124%;
+    }
+
+    .descricao{
+        margin-top: 2em;
+        width: 60%;
+    }
+
+    .logo-descricao{
+       width: 40%;
+    }
+
+    
+    .escrita{
+        font-size: 45px;
+    }
+
+    #digitacao{
+        font-size: 49px;
+        padding-left: 74px;
+    }
+
+    .botao{
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    .imagemAstronauta {
+        width: 360px;
+        margin-top: 0;
+    }
+}
+
+
+
+ @media screen and (max-width: 768px) {
+    .container{
+        height: 250px;
+        width: 123%;
+        margin: 0px auto;
+    }
+
+    .logo-descricao{
+        display: none;
+    }
+
+    .itens{
+        height: 300px;
+    }
+
+    .descricao{
+        width: 80%;
+        height: 150px;
+        margin: 100px auto 20px;
+        justify-content: start;
+        padding-bottom: 20px;
+    }
+
+    .escrita{
+        font-size: 30px;
+    }
+
+    #digitacao{
+        font-size: 35px;
+        padding-left: 70px;
+    }
+    .contato{
+        gap: 1em;
+    }
+
+    .botao{
+        margin-top: 10px;
+        font-size: 19px;
+        padding: 19px;
+    }
+    
+}
+
+
+
+

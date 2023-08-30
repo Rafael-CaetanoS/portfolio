@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/apresentacao.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <link rel="stylesheet" href="./css/skils.css">
+    <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+
+    <title>Portfólio | Rafael Caetano</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div><img src="img/dev.svg" alt="logo dev" class="logo"></div>
+        
+        <div class="item">
+            <ul class="menu">
+                <li class="menu-li">
+                    <a href="#inicio" class="menu-link">Inicio</a>
+                </li class="menu-li">
+                
+                <li class="menu-li" >
+                    <a href="#sobremim" class="menu-link">Sobre mim</a>
+                </li class="menu-li">
+                
+                <li class="menu-li" >
+                    <a href="#skils" class="menu-link">Skils</a>
+                </li class="menu-li">
+                
+                <li class="menu-li" >
+                    <a href="#projetos" class="menu-link"> Projetos</a>
+                </li class="menu-li">
+            </ul>
+        </div>
+    </header>
+    
+    <div class="container" id="inicio">
+        <div class="itens">
+            <div class="descricao" >
+                <p class="escrita" >Olá, me chamo </p >
+                <p class="escrita" id="digitacao" >Rafael Caetano</p>
+                <p class="escrita" >Dev Full Stack </p>   
+                <div class="contato">
+                    <a href="https://www.linkedin.com/in/rafaelcaetanoo/"  target="_blank" rel="noopener noreferrer" class="botao ">Linkedln</a>
+                    <a href="https://github.com/Rafael-CaetanoS"  target="_blank" rel="noopener noreferrer" class="botao git">GitHub</a>
+                </div>
+
+            </div>
+            <div class="logo-descricao">
+                <img src="img/astronauta.svg" alt="imagem astronauta" class="imagemAstronauta">
+            </div>
+        </div>
+    </div>
+   
+    <div class="container2" id="sobremim">
+        <h1 class="titulo">Sobre</h1>
+        <div class="divisaosobre">
+            <div class="foto">
+                <div class="caixa">
+                    <div class="conteudo">
+                        <img src="./img/eu.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+           
+            <div class="sobre">
+                <p class="texto">Sou um entusiasta de tecnologia. Entrei nesse mundo quando tinha 12 anos, aprendendo a montar computadores e a formatá-los. 
+                    Minha primeira experiência com programação foi em Python. Depois, aprendi front-end, utilizando HTML, CSS e JavaScript, por meio de cursos online.
+                     Atualmente, me dedico a projetos mais focados no back-end, utilizando as linguagens Java e C#. No entanto, estou aberto a aprender novas linguagens!
+                </p>
+            </div> 
+        </div>
+    </div>
+   
+    <div class="container3" id="skils">
+        <div class="divisaosobre2">
+            <h2 class="titulo">Skils</h2>
+            <ul class="container-linguagens">
+                <li class="linguagens" id="js" onclick="mostrarJs()"><img src="./img/js.png" alt=""></li>
+                <li class="linguagens" id="java" onclick="mostrarJava()"><img src="./img/java (1).png" alt=""></li>
+                <li class="linguagens" id="c#" onclick="mostrarCsharp()"><img src="./img/do-sustenido.png" alt=""></li>
+                <li class="linguagens" id="python" onclick="mostrarPython()"><img src="./img/python.png" alt=""></li>
+            </ul> 
+            
+            <div class="texto2">
+                <p class="linguagem javascript"> Conhecimentos em JavaScript: validação de formulários, manipulação do DOM e tratamento de APIs.
+                     Realizo projetos nessa linguagem com foco principalmente na web. </p>
+                <p class="linguagem java">Conhecimentos em Java: classes, arrays, laços, condicionais, polimorfismo, herança, interfaces e conexão com bancos de dados.
+                     Esta é uma das linguagens em que possuo maior conhecimento.
+                </p>
+                <p class="linguagem csharp" >Conhecimentos em Csharp: classes, arrays, laços, condicionais, polimorfismo, herança e leitura de arquivos.</p>
+                <p class="linguagem python">Conhecimentos em Python: Esta é uma das linguagens em que tenho menos experiência. Atualmente, estou aprendendo a sintaxe.
+                     Até o momento, meu conhecimento inclui laços de repetição, criação de funções, estruturas condicionais, arrays e conexão com bancos de dados. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container4" id="projetos">
+        <h3 class="titulo">Projetos</h3>
+            <ul class="tipo_projeto">
+                <li class="item_projeto" id="front">Front-end</li>
+                <li class="item_projeto selecionado" id="todos">Todos</li>
+                <li class="item_projeto" id="back">Back-end</li>
+            </ul>
+     
+            <div class="accordion_itens">
+                <div class="content back-end" >
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                                Cadastro de livros
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: Java e mySQL</h4>
+                            <p class="paragrafo__projeto">Implementei um sistema com interface gráfica (utilizando as bibliotecas SWING e JDBC) para a administração do cadastro de Livros.
+                                 Esse sistema permite realizar operações de cadastro, consulta, exclusão e alteração das informações de cada Livro.
+                                  Cada livro é identificado pelo ISBN, e possui título, autor, ano e editora associados.</p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="https://github.com/Rafael-CaetanoS/sistema-bibliotecario">Repositório</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="content back-end">
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                              Manipulando uma api
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: Python e mySQL</h4>
+                            <p class="paragrafo__projeto">Implementei um sistema que permite calcular a média de um produto específico obtido de uma API, além de cadastrar todos os produtos presentes nessa API em um banco de dados. Ao final,
+                                 o sistema exibe uma mensagem aleatória do Chuck Norris, obtida de outra API.
+                            </p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="https://github.com/Rafael-CaetanoS/Desafio-Back-end">Repositório</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="content front">
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                               Moni bank
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: HTML, CSS e JavaScript</h4>
+                            <p class="paragrafo__projeto">Desenvolvi um projeto acadêmico durante um dos cursos da Alura, focado na validação de formulários e na criação de sites responsivos.</p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="https://github.com/Rafael-CaetanoS/Moni-Bank">Repositório</a>
+                                <a  class="link__projeto"  href="https://rafael-caetanos.github.io/Moni-Bank/">Pagina</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="content back-end">
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                               ByteBank C#
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: C#</h4>
+                            <p class="paragrafo__projeto">Realizei a implementação de um sistema orientado a objetos para uma conta corrente.
+                                 Esse sistema é composto por três classes distintas: uma para representar o cliente,
+                                  outra para a conta corrente e a classe principal para executar o programa.
+                            </p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="https://github.com/Rafael-CaetanoS/Byte-Bank">Repositório</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="content front">
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                                Alura Cast
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: HTML e CSS</h4>
+                            <p class="paragrafo__projeto">Desenvolvi um projeto acadêmico em um dos cursos da Alura, no qual utilizei o display grid para criar um layout e tornei o site responsivo.</p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="https://github.com/Rafael-CaetanoS/Alura-Cast">Repositório</a>
+                                <a  class="link__projeto"  href="https://rafael-caetanos.github.io/Alura-Cast/#">Pagina</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="content front">
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                               Jogo advinhação
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: HTML, CSS e javascript</h4>
+                            <p class="paragrafo__projeto">Trata-se de um jogo de adivinhação de números, no qual você precisa acertar um número aleatório. Para fazer o chute, é necessário UTILIZAR O MICROFONE e DIZER o número desejado.
+                                 O jogo então indicará se o número é maior ou menor.
+                            </p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="https://github.com/Rafael-CaetanoS/JogoAdivinhacaoVozJS">Repositório</a>
+                                <a  class="link__projeto"  href="https://rafael-caetanos.github.io/JogoAdivinhacaoVozJS/">Pagina</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="content front">
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                                Culturama
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <h4 class="titulo__projeto">Desenvolvido em: HTML e CSS</h4>
+                            <p class="paragrafo__projeto">Desenvolvi um projeto acadêmico em um dos cursos da Alura, no qual utilizei as propriedades display: flex e display: grid na mesma página.</p>
+                            <div class="links__projeto"> 
+                                <a  class="link__projeto" href="  https://github.com/Rafael-CaetanoS/Culturama/settings/pages">Repositório</a>
+                                <a  class="link__projeto"  href="https://rafael-caetanos.github.io/Culturama/">Pagina</a>
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+            
+
+              
+            </div>  
+    </div>
+ 
+
+    <footer>
+        
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/skils.js"></script>
+    <script src="./js/projeto.js"></script>
+</body>
+</html>

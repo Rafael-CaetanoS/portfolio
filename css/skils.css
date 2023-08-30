@@ -1,0 +1,63 @@
+.container3{
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+}
+.divisaosobre2{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-linguagens{
+    display: flex;
+    gap: 3em;
+    margin: 4em auto;
+}
+
+.linguagens{
+    background-color: transparent;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+}
+
+.linguagens img{
+    width: 70px;
+    height: 70px;
+}
+
+.texto2{
+    width: 80%;
+    margin: 0 auto 4em;
+}
+.linguagem{
+    font-family: var(--fonte-nome);
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 35px;
+}
+ .java, .csharp, .python{
+    display: none;
+}   
+
+@media screen and (max-width: 1024px) {
+    .container3{
+        width: 124%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container3{
+        width: 124%;
+        height: 500px
+    }
+
+    .linguagens img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .linguagem{
+        font-size: 25px;
+    }
+}
