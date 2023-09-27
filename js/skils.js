@@ -46,6 +46,10 @@ function mostrarPython(){
     })
 }
 
+mostrarJava()
+mostrarPython()
+mostrarCsharp()
+mostrarJs()
 
 
 
